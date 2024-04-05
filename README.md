@@ -1,0 +1,1 @@
+I have scraped the particular product of my need here and i have devised a function where , if the price falls below a certain category, an email wil be sent to myself telling that the product X has fallen below price y.
