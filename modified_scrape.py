@@ -81,22 +81,6 @@ def check_price():
     plt.show()
 
 # Function to send email notification
-def send_mail():
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.ehlo()
-    server.login('jeevaj3v12@gmail.com', 'jeevaj3v2003#')
-    subject = "The Earphone you want is below 1300! Now is your chance to buy!"
-    body = "Jeeva, This is the moment we have been waiting for. Now is your chance to pick up the earphone of your dreams. Don't mess it up! Link here: https://www.amazon.com/Funny-Data-Systems-Business-Analyst/dp/B07FNW9FGJ/ref=sr_1_3?dchild=1&keywords=data+analyst+tshirt&qid=1626655184&sr=8-3"
-    msg = f"Subject: {subject}\n\n{body}"
-    server.sendmail('jeevaj3v12@gmail.com', msg)
-
-# Schedule price check every day at a specific time
-schedule.every().day.at("08:00").do(check_price)
-
-# Run the scheduling loop
-while True:
-    schedule.run_pending()
-    time.sleep(1)
 
 def send_mail():
     server = smtplib.SMTP_SSL('smtp.gmail.com',465)
